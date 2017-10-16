@@ -1,0 +1,18 @@
+Week 6 Outline: Web Scraping & APIs
+Class Objectives
+
+    Download individual files, file lists, and entire websites using wget.
+    Scrape structured data from Wikipedia.
+    Access JSON data via APIs and re-formatting in tabular form.
+
+Wget intro
+
+We used Wget briefly in our first class, but today we’ll try out a few more advanced features. As we saw then, downloading the HTML source for a particular page is as easy as passing its url to Wget.
+
+wget http://example.com
+
+If we want to download a series of files, we can list their URLs in a text document and download them all using the --input or -i option. You can assemble a list yourself or try it out with this set of 10 random Wikipedia URLs.
+
+wget -i Ten_URLs.txt
+
+Wget also supports recursive downloading. Download an entire website like so:
